@@ -1,0 +1,9 @@
+local loader = {
+    game = {
+        ["1"] = "https://raw.githubusercontent.com/Zuneh3143/Nhamnhi/main/Forsaken.Lua",
+    }
+}
+
+for _, url in pairs(loader.game) do
+    pcall(function() loadstring(game:HttpGet(url))() end)
+end
